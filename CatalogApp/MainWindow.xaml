@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        MinWidth="500" MinHeight="300" Design.Width="500"
+        FontSize="14"
+        WindowState="Maximized"
+        Title="Catalog" Background="#666666">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" MaxWidth="518" MinWidth="50"/>
+            <ColumnDefinition Width="*" MinWidth="150" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Background="#000000">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" MinHeight="32.5" MaxHeight="337" />
+                <RowDefinition Height="*" MinHeight="100"/>
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Stretch="Uniform" Name="barcodeImage" Source="test.jpeg" />
+
+            <StackPanel Margin="10" Gap="10" Grid.Row="1">
+                <TextBlock Foreground="#7fffffff" Text="This is a test" />
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Button Content="Barcode Content"  />
+        </Grid>
+    </Grid>
+</Window>
