@@ -26,9 +26,9 @@ namespace Catalog
         private DigiClient DKClient = new DigiClient()
         {
             ClientID = "31801af8-5c22-4b34-b2f6-cc3a38275b58",
-            ClientSecret = "F7dI6bP6yQ5jS0nF0fT7oW2dN4bF1xA5oP1bT2xE3dN7fJ5qM0",
-            AccessToken = "wl3CWdZlt0agFI3HLHxcnl6PTouD",
-            RefreshToken = "c02VcPPoGVNZVyBzx1W2mYkHCfeA31MstcZsBStscA",
+            ClientSecret = "",
+            AccessToken = "",
+            RefreshToken = "",
             RedirectUri = "https://catalog.muny.us/barcode-scan/oauth/return"
         };
 
@@ -38,7 +38,7 @@ namespace Catalog
 
             Route.Add("/barcode-scan/add-item", (HttpAction)HandleBarcodeScanAddItem, "POST");
 
-            Route.Add("/barcode-scan/oauth/return{retarded}", (HttpAction)HandleOAuthCallback);
+            Route.Add("/barcode-scan/oauth/return{unused}", (HttpAction)HandleOAuthCallback);
 
             int port = 8074;
             Console.WriteLine($"HTTP server listening on port {port}");
