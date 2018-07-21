@@ -10,6 +10,9 @@
                 "--project",
                 "${workspaceFolder}/CatalogApp/Catalog.csproj"
             ],
+            "options": {
+                "cwd": "${workspaceFolder}/CatalogApp"
+            },
             "problemMatcher": "$msCompile",
             "group": {
                 "kind": "build",
