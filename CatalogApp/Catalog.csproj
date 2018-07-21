@@ -12,6 +12,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.6.2-build5715-beta" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.6.2-build5715-beta" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="Simple-HTTP" Version="1.0.6" />
     <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0004" />

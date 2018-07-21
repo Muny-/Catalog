@@ -7,7 +7,8 @@
             "type": "process",
             "args": [
                 "run",
-                "${workspaceFolder}/Catalog.csproj"
+                "--project",
+                "${workspaceFolder}/CatalogApp/Catalog.csproj"
             ],
             "problemMatcher": "$msCompile",
             "group": {
