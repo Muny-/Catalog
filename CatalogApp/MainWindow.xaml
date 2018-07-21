@@ -16,7 +16,7 @@
                 <RowDefinition Height="*" MinHeight="100"/>
             </Grid.RowDefinitions>
 
-            <Image Grid.Row="0" Stretch="Uniform" Name="barcodeImage" />
+            <Image Grid.Row="0" Stretch="Uniform" Name="barcodeImage" Source="resm:Catalog.Assets.test.png?assembly=Catalog" />
 
             <StackPanel Margin="10" Gap="10" Grid.Row="1">
                 <TextBlock Foreground="#7fffffff" Text="This is a test" />
