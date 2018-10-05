@@ -1,0 +1,249 @@
+{
+    "PartDetails": {
+        "MyPricing": [],
+        "Obsolete": false,
+        "MediaLinks": [
+            {
+                "MediaType": "Datasheets",
+                "Title": "SN54/74AHCT245",
+                "SmallPhoto": "",
+                "Thumbnail": "",
+                "Url": "http://www.ti.com/lit/ds/symlink/sn74ahct245.pdf"
+            },
+            {
+                "MediaType": "Product Photos",
+                "Title": "20-DIP,R-PDIP-Txx",
+                "SmallPhoto": "http://media.digikey.com/photos/Texas%20Instr%20Photos/296-20-DIP_sml.jpg",
+                "Thumbnail": "http://media.digikey.com/photos/Texas%20Instr%20Photos/296-20-DIP_tmb.jpg",
+                "Url": "http://media.digikey.com/photos/Texas%20Instr%20Photos/296-20-DIP.jpg"
+            },
+            {
+                "MediaType": "Featured Product",
+                "Title": "Logic Solutions",
+                "SmallPhoto": "",
+                "Thumbnail": "",
+                "Url": "https://www.digikey.com/en/product-highlight/t/texas-instruments/logic-solutions "
+            },
+            {
+                "MediaType": "Featured Product",
+                "Title": "Analog Solutions",
+                "SmallPhoto": "",
+                "Thumbnail": "",
+                "Url": "https://www.digikey.com/en/product-highlight/t/texas-instruments/analog-solutions "
+            },
+            {
+                "MediaType": "PCN Design/Specification",
+                "Title": "Copper Bond Wire Revision A 04/Dec/2013",
+                "SmallPhoto": "",
+                "Thumbnail": "",
+                "Url": "http://media.digikey.com/pdf/PCNs/Texas%20Instruments/PCN20120223003A_Copper-wire.pdf"
+            },
+            {
+                "MediaType": "PCN Design/Specification",
+                "Title": "Material Set30/Mar/2017",
+                "SmallPhoto": "",
+                "Thumbnail": "",
+                "Url": "http://media.digikey.com/pdf/PCNs/Texas%20Instruments/PCN20170310000.pdf"
+            }
+        ],
+        "StandardPackage": 20,
+        "LimitedTaxonomy": {
+            "Children": [
+                {
+                    "Children": [
+                        {
+                            "Children": [],
+                            "PartCount": 1,
+                            "NewPartCount": 0,
+                            "ParameterId": -8,
+                            "ValueId": "704",
+                            "Parameter": "Categories",
+                            "Value": "Logic - Buffers, Drivers, Receivers, Transceivers"
+                        }
+                    ],
+                    "PartCount": 1,
+                    "NewPartCount": 0,
+                    "ParameterId": -8,
+                    "ValueId": "32",
+                    "Parameter": "Categories",
+                    "Value": "Integrated Circuits (ICs)"
+                }
+            ],
+            "PartCount": 1,
+            "NewPartCount": 0,
+            "ParameterId": -8,
+            "ValueId": "0",
+            "Parameter": "Categories",
+            "Value": "Out of Bounds"
+        },
+        "Kits": [],
+        "KitContents": [],
+        "MatingProducts": [],
+        "ResultCode": 0,
+        "SearchLocale": {
+            "siteField": 1,
+            "languageField": 0,
+            "currencyField": 0,
+            "pricingCountryLovField": "00"
+        },
+        "StandardPricing": [
+            {
+                "BreakQuantity": 1,
+                "UnitPrice": 0.53,
+                "TotalPrice": 0.53
+            },
+            {
+                "BreakQuantity": 10,
+                "UnitPrice": 0.45,
+                "TotalPrice": 4.5
+            },
+            {
+                "BreakQuantity": 100,
+                "UnitPrice": 0.336,
+                "TotalPrice": 33.6
+            },
+            {
+                "BreakQuantity": 500,
+                "UnitPrice": 0.264,
+                "TotalPrice": 132
+            },
+            {
+                "BreakQuantity": 1000,
+                "UnitPrice": 0.204,
+                "TotalPrice": 204
+            }
+        ],
+        "Category": {
+            "Id": "39",
+            "Text": "Integrated Circuits (ICs)"
+        },
+        "ChipOutpostPart": false,
+        "RohsInfo": "RoHS Compliant",
+        "LeadStatus": "Lead Free",
+        "Family": {
+            "Id": "404",
+            "Text": "Logic - Buffers, Drivers, Receivers, Transceivers"
+        },
+        "Parameters": [
+            {
+                "ParameterId": 7,
+                "ValueId": "6",
+                "Parameter": "Packaging",
+                "Value": "Tube"
+            },
+            {
+                "ParameterId": 1989,
+                "ValueId": "0",
+                "Parameter": "Part Status",
+                "Value": "Active"
+            },
+            {
+                "ParameterId": 247,
+                "ValueId": "399",
+                "Parameter": "Logic Type",
+                "Value": "Transceiver, Non-Inverting"
+            },
+            {
+                "ParameterId": 105,
+                "ValueId": "i1",
+                "Parameter": "Number of Elements",
+                "Value": "1"
+            },
+            {
+                "ParameterId": 547,
+                "ValueId": "7",
+                "Parameter": "Number of Bits perElement",
+                "Value": "8"
+            },
+            {
+                "ParameterId": 474,
+                "ValueId": "48",
+                "Parameter": "Input Type",
+                "Value": "-"
+            },
+            {
+                "ParameterId": 41,
+                "ValueId": "923",
+                "Parameter": "Output Type",
+                "Value": "3-State"
+            },
+            {
+                "ParameterId": 592,
+                "ValueId": "29",
+                "Parameter": "Current - Output High, Low",
+                "Value": "8mA, 8mA"
+            },
+            {
+                "ParameterId": 276,
+                "ValueId": "15",
+                "Parameter": "Voltage - Supply",
+                "Value": "4.5 V ~ 5.5 V"
+            },
+            {
+                "ParameterId": 252,
+                "ValueId": "735",
+                "Parameter": "Operating Temperature",
+                "Value": "-40°C ~ 125°C (TA)"
+            },
+            {
+                "ParameterId": 69,
+                "ValueId": "80",
+                "Parameter": "Mounting Type",
+                "Value": "Through Hole"
+            },
+            {
+                "ParameterId": 16,
+                "ValueId": "6524",
+                "Parameter": "Package / Case",
+                "Value": "20-DIP (0.300\", 7.62mm)"
+            },
+            {
+                "ParameterId": 1291,
+                "ValueId": "1207",
+                "Parameter": "Supplier Device Package",
+                "Value": "20-PDIP"
+            },
+            {
+                "ParameterId": 2078,
+                "ValueId": "6420",
+                "Parameter": "Base Part Number",
+                "Value": "74AHCT245"
+            }
+        ],
+        "PartUrl": "/product-detail/en/texas-instruments/SN74AHCT245N/296-1476-5-ND/277122",
+        "PrimaryDatasheet": "http://www.ti.com/lit/ds/symlink/sn74ahct245.pdf",
+        "PrimaryPhoto": "http://media.digikey.com/photos/Texas%20Instr%20Photos/296-20-DIP.jpg",
+        "PrimaryVideo": "",
+        "RohsSubs": [],
+        "Series": {
+            "ParameterId": -5,
+            "ValueId": "465",
+            "Parameter": "Series",
+            "Value": "74AHCT"
+        },
+        "SuggestedSubs": [],
+        "ManufacturerLeadWeeks": "6 weeks",
+        "ManufacturerPageUrl": "/en/supplier-centers/t/texas-instruments",
+        "PartStatus": "Active",
+        "ManufacturerPartNumber": "SN74AHCT245N",
+        "MinimumOrderQuantity": 1,
+        "NonStock": false,
+        "Packaging": {
+            "ParameterId": 7,
+            "ValueId": "6",
+            "Parameter": "Packaging",
+            "Value": "Tube"
+        },
+        "PartId": 277122,
+        "QuantityOnHand": 2243,
+        "DigiKeyPartNumber": "296-1476-5-ND",
+        "ProductDescription": "IC TXRX NON-INVERT 5.5V 20DIP",
+        "UnitPrice": 0.53,
+        "ManufacturerName": {
+            "Id": "296",
+            "Text": "Texas Instruments"
+        },
+        "ManfacturerPublicQuantity": 0,
+        "AvailableOnOrder": 0
+    }
+}

@@ -1,29 +1,72 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        MinWidth="500" MinHeight="300" Design.Width="500"
+        MinWidth="300" MinHeight="300"
+        Design.Width="800"
+        Design.Height="800"
         FontSize="14"
         WindowState="Maximized"
-        Title="Catalog" Background="#666666">
+        Title="Catalog" Background="#000F08" FontFamily="Iosevka Term">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" MaxWidth="518" MinWidth="50"/>
+            <ColumnDefinition Width="2" />
             <ColumnDefinition Width="*" MinWidth="150" />
         </Grid.ColumnDefinitions>
 
-        <Grid Grid.Column="0" Background="#000000">
+        <Grid Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" MinHeight="32.5" MaxHeight="337" />
-                <RowDefinition Height="*" MinHeight="100"/>
+                <RowDefinition Height="2" />
+                <RowDefinition Height="175" />
+                <RowDefinition Height="2" />
+                <RowDefinition Height="*" MinHeight="120"/>
             </Grid.RowDefinitions>
 
-            <Image Grid.Row="0" Stretch="Uniform" Name="barcodeImage" Source="test.jpeg" />
+            <Grid Background="#000000">
+                <Image Grid.Row="0" Stretch="Uniform" Name="barcodeImage" Source="{Binding BarcodeBitmap}" />
+            </Grid>
 
-            <StackPanel Margin="10" Gap="10" Grid.Row="1">
-                <TextBlock Foreground="#7fffffff" Text="This is a test" />
+            <Panel Grid.Row="1" Background="#1C3738" Height="2" />
+
+            <StackPanel Margin="0,20,0,0" Gap="10" Grid.Row="2">
+                <TextBlock Foreground="#F4FFF8" Text="BARCODE DATA" TextAlignment="Center" FontSize="16" FontWeight="SemiBold" />
+                <Grid ColumnDefinitions="125,2,*">
+                    <StackPanel Margin="0,0,10,0" Grid.Column="0" TextPresenter.Foreground="#8BAAAD">
+                        <TextBlock TextAlignment="Right" Text="STATUS" />
+                        <TextBlock TextAlignment="Right" Text="DIGIKEY PART №" />
+                        <TextBlock TextAlignment="Right" Text="MFG. PART №" />
+                        <TextBlock TextAlignment="Right" Text="MFG. NAME" />
+                        <TextBlock TextAlignment="Right" Text="DESC" />
+                        <TextBlock TextAlignment="Right" Text="QTY" />
+                    </StackPanel>
+
+                    <Panel Grid.Column="1" Background="#1C3738" Width="2" />
+
+                    <StackPanel VerticalAlignment="Center" Margin="10,0,0,0" Grid.Column="2" TextPresenter.Foreground="#F4FFF8" TextPresenter.FontWeight="Medium">
+                        <TextBlock TextAlignment="Left" Text="{Binding BarcodeData.Status}" Foreground="{Binding BarcodeData.StatusColor}" />
+                        <TextBlock TextAlignment="Left" Text="{Binding BarcodeData.DigiKeyPartNumber}" />
+                        <TextBlock TextAlignment="Left" Text="{Binding BarcodeData.ManufacturerPartNumber}" />
+                        <TextBlock TextAlignment="Left" Text="{Binding BarcodeData.ManufacurerName}" />
+                        <TextBlock TextAlignment="Left" Text="{Binding BarcodeData.Description}" />
+                        <TextBlock TextAlignment="Left" Text="{Binding BarcodeData.Quantity}" />
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+
+            <Panel Grid.Row="3" Background="#1C3738" Height="2" />
+
+            <StackPanel VerticalAlignment="Center" TextPresenter.FontSize="25" TextPresenter.Foreground="#F4FFF8" Grid.Row="4" Margin="20" Gap="10">
+                <TextBlock TextAlignment="Center" Text="HOW MANY?" VerticalAlignment="Center" />
+                <!--<TextBox Name="HowManyBox" Watermark="0" TextAlignment="Center" Background="#1C3738" />!-->
+                <NumericUpDown Width="150" HorizontalAlignment="Center" Name="HowManyBox" Foreground="#F4FFF8" Background="#020d08" />
+                <Button Name="HowManyButton" Content="UPDATE/ADD ITEM(S)" />
             </StackPanel>
         </Grid>
-        <Grid Grid.Column="1">
-            <Button Content="Barcode Content"  />
+
+        <Panel Grid.Column="1" Background="#1C3738" Width="2" />
+
+        <Grid  Grid.Column="2" VerticalAlignment="Center">
+
         </Grid>
     </Grid>
 </Window>

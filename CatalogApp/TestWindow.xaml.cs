@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace Catalog.CatalogApp
+namespace Catalog
 {
     public class TestWindow : Window
     {

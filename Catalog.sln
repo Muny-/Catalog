@@ -31,4 +31,7 @@ Global
 		{EA4FB20C-65F6-4C85-869A-D6DB66A6140C}.Release|x86.ActiveCfg = Release|Any CPU
 		{EA4FB20C-65F6-4C85-869A-D6DB66A6140C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(AvalonStudioProperties) = preSolution
+		StartupItem = {EA4FB20C-65F6-4C85-869A-D6DB66A6140C}
+	EndGlobalSection
 EndGlobal

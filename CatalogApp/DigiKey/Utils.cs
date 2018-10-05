@@ -11,7 +11,16 @@ namespace Catalog.DigiKey
     {
         public static FormUrlEncodedContent FormUrlEncodeData(object data) => new FormUrlEncodedContent(JsonConvert.DeserializeObject<Dictionary<string, string>>(JsonConvert.SerializeObject(data)));
 
-        public static StringContent JsonEncodeData(object data) => new StringContent(JsonConvert.SerializeObject(data));
+        public static StringContent JsonEncodeData(object data)
+        {
+            string serialized = JsonConvert.SerializeObject(data);
+            var stringContent = new StringContent(serialized);
+            
+            stringContent.Headers.Clear();
+            stringContent.Headers.Add("Content-Type", "application/json");
+
+            return stringContent;
+        } 
     }
 
     public static class Extensions
